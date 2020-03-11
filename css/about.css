@@ -1,0 +1,89 @@
+/* Grid for About Page */
+:root{
+    --box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 500px;
+}
+
+.image{
+    grid-row: 1;
+    grid-column: 1;
+    margin: 30px;
+    text-align: center;
+}
+
+.text{
+    grid-row: 1;
+    grid-column: 2;
+    text-align: center;
+    margin: auto 120px;
+}
+
+/* About Page Formatting */
+
+.image img{
+    height: 100%;
+    box-shadow: var(--box-shadow);
+}
+
+.heading{
+    font-size: 80px;
+}
+
+/* Grid for FontAwesome Icons */
+
+.icons{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 300px;
+}
+
+.item{
+    grid-row: auto;
+    grid-column: auto;
+    margin: 40px 60px;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.item i{
+    font-size: 60px;
+    padding: 20px 0;
+}
+
+.item h3{
+    font-size: 30px;
+}
+
+
+@media(max-width: 800px){
+    .text{
+        margin: 30px;
+    }
+    .heading{
+        font-size: 60px;
+    }
+
+    .item{
+        margin: 40px 20px;
+    }
+
+    .item i{
+        font-size: 40px;
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    .item h3{
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .item p{
+        font-size: 13px;
+    }
+}

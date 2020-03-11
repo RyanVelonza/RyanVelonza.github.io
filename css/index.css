@@ -1,0 +1,207 @@
+/* Index CSS for Grid Spacing and Stuff */
+
+:root{
+    --white-color: #FFFFFF !important;
+    --main-color:  #8c2e2e;
+    --gray-color: #5D5D5D;
+    --tert-color: #000000;
+    --background-color: #bdbdbd;
+    --background-color2: #d4d4d4;
+    --box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+/* Grid and Dispaly for First Bar */
+
+.home{
+    display:grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 450px;
+    margin: 0 30px;
+}
+
+.imgCarousel{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.welcome{
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-row: 1;
+    grid-column: auto;
+    padding: 30px;
+    padding-top: 20px;
+    margin-right: 80px;
+}
+
+.subheading{
+    margin-bottom: 35px;
+}
+
+.welcome div{
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.carousel-item img{
+    height:400px;
+}
+
+.carousel{
+    margin: 20px 120px;
+    padding: 20px 20px;
+}
+
+/* Repair Section */
+
+.wiring{
+    margin: 30px 100px;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 80px;
+}
+
+.imagerep{
+    grid-row: 1 / span 2;
+    grid-column: 1;
+}
+
+.textrep{
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    padding-top: 80px;
+    padding-right: 80px;
+}
+
+.repairimg img{
+    width: auto;
+    height: 400px;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.imagerep p{
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* News Section */
+
+.news{
+    margin: 0 100px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px repeat(2, 500px);
+}
+
+.title{
+    grid-row: 1;
+    grid-column: 1 / span 3;
+    text-align: center;
+}
+
+.title h2{
+    font-size: 80px;
+}
+
+.newitem{
+    grid-row: auto;
+    grid-column: auto;
+    box-shadow: var(--box-shadow);
+    margin: 15px 40px; 
+    text-align: center;
+}
+
+.newheader{
+    margin-top: 10px;
+}
+
+.newitem p{
+    margin: 22px;
+}
+
+.newitem img{
+    width: 350px;
+}
+
+/* Image Highlight */
+.newitem a img{
+    box-shadow: var(--box-shadow);
+}
+
+.newitem a:hover img{
+    transition: .3s all ease;
+    box-shadow: 0 1px 10px rgba(41, 41, 41, 0.904);
+}
+
+@media(max-width: 800px){
+    /* Welcome */
+    .home{
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 400px;
+    }
+
+    .imgCarousel{
+        height: 300px;
+    }
+
+    .welcome{
+        grid-row: 2;
+        padding: 5px;
+        padding-top: 10px;
+        margin:auto;
+    }
+
+    .carousel-item img{
+        height:280px;
+    }
+    
+    .carousel{
+        margin: 0;
+        padding: 5px;
+    }
+
+    /* Repair */
+
+    .wiring{
+        margin: 0px 30px !important;
+        grid-template-columns: 100%;
+        grid-template-rows: 500px 350px;
+    }
+
+    .imagerep{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    
+    .textrep{
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+        padding-top: 20px;
+        padding-right: 30px;
+    }
+
+    /* News */
+    .news{
+        margin: 30px !important;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px repeat(3, 40vh);
+    }
+
+    .title{
+        grid-column: 1 / span 2;
+    }
+
+    .newheader{
+        font-size: 20px;
+    }
+
+    .newitem img{
+        width: 100%;
+    }
+}

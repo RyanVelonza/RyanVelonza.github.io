@@ -1,0 +1,31 @@
+.thanks{
+    text-align: center;
+    padding: 100px 200px;
+}
+
+.order{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row: 300px;
+}
+
+.message{
+    text-align: center;
+    margin: auto;
+}
+
+.message p{
+    margin: 0 40px;
+}
+
+.orderform{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.orderform div{
+    padding: 10px 0;
+    margin: 20px auto;
+}

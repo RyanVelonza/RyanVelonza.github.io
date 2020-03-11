@@ -1,0 +1,110 @@
+/* Parts CSS for Grid Spacing and Stuff */
+
+:root{
+    --white-color: #FFFFFF !important;
+    --main-color:  #8c2e2e;
+    --gray-color: #5D5D5D;
+    --tert-color: #000000;
+    --background-color: #bdbdbd;
+    --background-color2: #d4d4d4;
+    --box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+/* Intro */
+
+.intro h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.intro p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.intro{
+    margin: 10px 550px;
+}
+
+.button{
+    border-style: none !important;
+    display: block !important;
+}
+
+/* Push button grid */
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 60px 510px 510px);
+    margin: 0 60px;
+}
+
+.btnheading{
+    grid-row: 1;
+    grid-column: 1 / span 3;
+    font-size: 50px;
+}
+
+.joyheading{
+    grid-row: 4;
+    grid-column: 1 / span 3;
+    font-size: 50px;
+}
+
+.etcheading{
+    grid-row: 7;
+    grid-column: 1 / span 3;
+    font-size: 50px;
+}
+
+.pushbutton{
+    grid-row: auto;
+    grid-column: auto;
+    margin: 30px;
+    text-align: center;
+}
+
+.pushbutton button{
+    margin: auto;
+    margin-top: 10px;
+}
+
+.pushbutton img{
+    width: 70%;
+    margin-top: 10px;
+}
+
+@media(max-width: 800px){
+    .intro{
+        margin: 10px 30px;
+    }
+
+    /* pushbutton grid */
+    .buttons{
+        margin: 0 30px !important;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, 60px 25% 25% 25%);
+    }
+
+    .btnheading{
+        grid-column: 1 / span 2;
+    }
+
+    .joyheading{
+        grid-row: 5;
+        grid-column: 1 / span 2;
+    }
+
+    .etcheading{
+        grid-row: 9;
+        grid-column: 1 / span 2;
+    }
+
+    .button{
+        font-size: 15px;
+    }
+}

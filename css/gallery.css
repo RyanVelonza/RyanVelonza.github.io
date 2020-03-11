@@ -1,0 +1,29 @@
+/* Grid for Gallery Page */
+
+.images{
+    display: grid;
+    grid-template-rows: repeat(4, 350px);
+    grid-template-columns: repeat(4, 25%);
+    margin: 0;
+}
+
+.item{
+    grid-row: auto;
+    grid-column: auto;
+    margin: 30px;
+}
+
+.item a img{
+    width: 100%;
+}
+
+@media(max-width: 800px){
+    .images{
+        grid-template-rows: repeat(8, 100%);
+        grid-template-columns: repeat(2, 50%);
+        margin: 0 10px;
+    }
+    .item{
+        margin: 10px;
+    }
+}
